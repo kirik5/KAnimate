@@ -1,0 +1,27 @@
+.fontfull(@weight, @size, @lineheight, @letterspacing){
+    font-weight: @weight;
+    font-size: @size;
+    line-height: @lineheight;
+    letter-spacing: @letterspacing;
+};
+
+.font(@weight, @size){
+    font-weight: @weight;
+    font-size: @size;
+};
+
+.wrapper-fixed(){
+    .wrapper();
+    .lg-block({
+        max-width: 1170px;
+    });
+    .md-block({
+        max-width: 960px;
+    });
+    .sm-block({
+        max-width: 720px;
+    });
+    .xs-block({
+        max-width: 540px;
+    });
+};

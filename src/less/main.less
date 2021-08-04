@@ -1,0 +1,51 @@
+.firstScreen {
+    &__button {
+        display: block;
+        padding: 10px 25px;
+        background-color: green;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        margin-top: 25px;
+    }
+
+    &__content01, &__content02 {
+        max-width: 300px;
+        margin-top: 30px;
+        background-color: yellowgreen;
+        padding: 25px;
+    }
+}
+
+.button__container{
+    display: flex;
+}
+
+
+.anim-target {
+    display: none;
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translateY(-10%);
+}
+
+.fade-enter-active {
+    transition: opacity 2s, transform 2s;
+}
+
+.fade-enter-to {
+    
+}
+
+.fade-leave {}
+
+.fade-leave-active {
+    transition: opacity 2s, transform 2s;
+}
+
+.fade-leave-to {
+    opacity: 0;
+    transform: translateY(-10%);
+}
